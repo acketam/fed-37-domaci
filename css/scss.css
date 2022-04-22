@@ -7,4 +7,42 @@
   font-family: "Roboto", sans-serif;
 }
 
+nav {
+  background-color: #374249;
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+nav ul {
+  display: flex;
+  height: 100%;
+}
+nav ul li {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+}
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #f4f4f4;
+  text-align: center;
+  width: 100px;
+  margin: 0 10px;
+  padding: 10px;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+nav ul li a.nav-ny {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 50px;
+  width: 250px;
+  background-color: #f75311;
+  height: 100%;
+}
+
 /*# sourceMappingURL=scss.css.map */
