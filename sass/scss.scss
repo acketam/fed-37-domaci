@@ -73,3 +73,52 @@ nav {
 
   }
 }
+
+.search-container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+
+  .search {
+    
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      padding: 5px 10px;
+      margin: 0 10px;
+      border: 1px $color-text solid;
+      border-radius: 12px;
+      color: $color-text;
+
+    }
+  }
+}
+
+.ponude{
+  background-color: $bg-section;
+  width: 100%;
+ 
+
+  .ponude-container {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .box-ponuda {
+    height: 400px;
+    margin: 30px 0;
+   
+
+    img {
+      height: 100%;
+      margin: 0 15px;
+    }
+  }
+}
