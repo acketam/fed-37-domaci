@@ -94,6 +94,11 @@ nav {
       border-radius: 12px;
       color: $color-text;
 
+      &:hover {
+        color: white;
+        background-color: $bg-links;
+      }
+
     }
   }
 }
@@ -105,7 +110,7 @@ nav {
 
   .ponude-container {
     margin: auto;
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -120,5 +125,123 @@ nav {
       height: 100%;
       margin: 0 15px;
     }
+  }
+}
+
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+
+
+  p {
+    padding: 30px 0;
+  }
+
+  table {
+    width: 500px;
+
+    .bela {
+      color: white;
+    }
+  
+    th,td {
+      border: 1px solid black;
+      text-align: center;
+    }
+  
+    .sakriji {
+      border: none;
+    }
+  
+    .secondary {
+      background-color: $bg-secondary;
+    }
+  
+    .primary {
+      background-color: $bg-primary;
+    }
+  }
+}
+.contact {
+  display: flex;
+  background-color: $bg-section;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .naslov {
+    padding: 15px;
+
+  }
+  
+
+  .sadrzaj {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px;
+  }
+ 
+
+}
+
+.forma-container {
+  
+
+  form {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+   
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30vw;
+    background-color: $bg-secondary;
+
+    & select {
+      width: 15%;
+      margin: 15px;
+    }
+
+    & #name {
+      width: 60%;
+      margin: 15px;
+      height: 20px;
+    }
+
+    & #email {
+      width: 83%;
+    }
+
+    & #text-area {
+      width: 83%;
+      margin: 15px;
+    }
+  }
+
+}
+
+footer {
+height: 40px;
+background-color: $bg-primary;
+display: flex;
+justify-content: center;
+align-items: center;
+
+  p {
+    color: $bg-section;
+  }
+
+  .secondary {
+    color: $bg-secondary;
   }
 }

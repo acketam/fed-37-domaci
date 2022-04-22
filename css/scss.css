@@ -86,6 +86,10 @@ nav ul li a.nav-ny {
   border-radius: 12px;
   color: #797979;
 }
+.search-container .search a:hover {
+  color: white;
+  background-color: #485f6d;
+}
 
 .ponude {
   background-color: #f3f7f9;
@@ -93,7 +97,7 @@ nav ul li a.nav-ny {
 }
 .ponude .ponude-container {
   margin: auto;
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -105,6 +109,97 @@ nav ul li a.nav-ny {
 .ponude .box-ponuda img {
   height: 100%;
   margin: 0 15px;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+}
+.pricing p {
+  padding: 30px 0;
+}
+.pricing table {
+  width: 500px;
+}
+.pricing table .bela {
+  color: white;
+}
+.pricing table th, .pricing table td {
+  border: 1px solid black;
+  text-align: center;
+}
+.pricing table .sakriji {
+  border: none;
+}
+.pricing table .secondary {
+  background-color: #f75311;
+}
+.pricing table .primary {
+  background-color: #374249;
+}
+
+.contact {
+  display: flex;
+  background-color: #f3f7f9;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .naslov {
+  padding: 15px;
+}
+.contact .sadrzaj {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 50px;
+}
+
+.forma-container form {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.forma-container .form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 30vw;
+  background-color: #f75311;
+}
+.forma-container .form select {
+  width: 15%;
+  margin: 15px;
+}
+.forma-container .form #name {
+  width: 60%;
+  margin: 15px;
+  height: 20px;
+}
+.forma-container .form #email {
+  width: 83%;
+}
+.forma-container .form #text-area {
+  width: 83%;
+  margin: 15px;
+}
+
+footer {
+  height: 40px;
+  background-color: #374249;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: #f3f7f9;
+}
+footer .secondary {
+  color: #f75311;
 }
 
 /*# sourceMappingURL=scss.css.map */
