@@ -1,6 +1,4 @@
 @import "var";
 @import "mixin";
 
-body {
-  font-family: $font;
-}
+@include main;
