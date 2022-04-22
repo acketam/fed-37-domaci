@@ -45,4 +45,26 @@ nav ul li a.nav-ny {
   height: 100%;
 }
 
+.showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../slike/intro.jpg") no-repeat center center/cover;
+  height: 90vh;
+  width: 100%;
+}
+.showcase .showcase-content {
+  background-color: rgba(28, 37, 43, 0.5);
+  width: 70vw;
+  text-align: center;
+}
+.showcase .showcase-content h1 {
+  color: #f4f4f4;
+  font-size: 2.5rem;
+}
+.showcase .showcase-content p {
+  color: #f4f4f4;
+  font-size: 1.5rem;
+}
+
 /*# sourceMappingURL=scss.css.map */

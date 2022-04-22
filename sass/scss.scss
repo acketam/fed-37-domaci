@@ -45,3 +45,31 @@ nav {
     }
   }
 }
+
+.showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../slike/intro.jpg') no-repeat 
+  center center/cover;
+  height: 90vh;
+  width: 100%;
+
+  .showcase-content {
+    background-color: $bg-header;
+    width: 70vw;
+    text-align: center;
+    
+
+    h1 {
+      color: $color-primary;
+      font-size: 2.5rem;
+    }
+
+    p {
+      color: $color-primary;
+      font-size: 1.5rem;
+    }
+
+  }
+}
