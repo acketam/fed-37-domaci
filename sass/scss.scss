@@ -9,15 +9,28 @@ nav {
   align-items: center;
   height: 70px;
 
+  @include phone {
+    height: auto;
+    justify-content: center;
+  }
+
   ul {
     display: flex;
     height: 100%;
+
+    @include phone {
+      flex-direction: column;
+    }
 
     li {
       display: flex;
       list-style: none;
       height: 100%;
       align-items: center;
+
+      @include phone {
+        justify-content: center;
+      }
 
       a {
         display: inline-block;
@@ -50,8 +63,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../slike/intro.jpg') no-repeat 
-  center center/cover;
+  background: url("../slike/intro.jpg") no-repeat center center/cover;
   height: 90vh;
   width: 100%;
 
@@ -59,7 +71,6 @@ nav {
     background-color: $bg-header;
     width: 70vw;
     text-align: center;
-    
 
     h1 {
       color: $color-primary;
@@ -70,7 +81,6 @@ nav {
       color: $color-primary;
       font-size: 1.5rem;
     }
-
   }
 }
 
@@ -80,7 +90,6 @@ nav {
   align-items: center;
 
   .search {
-    
     width: 85%;
     display: flex;
     justify-content: flex-end;
@@ -98,36 +107,66 @@ nav {
         color: white;
         background-color: $bg-links;
       }
-
     }
   }
 }
 
-.ponude{
+.ponude {
   background-color: $bg-section;
   width: 100%;
- 
 
   .ponude-container {
     margin: auto;
     width: 80%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
   }
 
   .box-ponuda {
+    position: relative;
     height: 400px;
-    margin: 30px 0;
-   
+    margin: 30px 15px;
+
+    @include phone {
+      width: 100%;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover .tekst {
+      display: block;
+    }
+
+    .tekst {
+      display: none;
+      background: rgb(243, 247, 249, 0.8);
+      padding: 15px;
+      width: 100%;
+      height: 50%;
+      position: absolute;
+      top: 0px;
+      left: 15px;
+
+      @include phone {
+        display: block;
+      }
+
+      p {
+        font-size: 2rem;
+      }
+    }
 
     img {
       height: 100%;
+      width: 100%;
       margin: 0 15px;
     }
   }
 }
-
 
 .pricing {
   display: flex;
@@ -136,31 +175,31 @@ nav {
   align-items: center;
   padding: 70px 0;
 
-
   p {
     padding: 30px 0;
   }
 
   table {
-    width: 500px;
+    width: 90%;
 
     .bela {
       color: white;
     }
-  
-    th,td {
+
+    th,
+    td {
       border: 1px solid black;
       text-align: center;
     }
-  
+
     .sakriji {
       border: none;
     }
-  
+
     .secondary {
       background-color: $bg-secondary;
     }
-  
+
     .primary {
       background-color: $bg-primary;
     }
@@ -175,28 +214,33 @@ nav {
 
   .naslov {
     padding: 15px;
-
   }
-  
 
   .sadrzaj {
     display: flex;
     justify-content: space-around;
     width: 100%;
     padding: 50px;
-  }
- 
 
+    @include tablet {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include phone {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 .forma-container {
-  
-
   form {
     display: flex;
     justify-content: center;
     margin: auto;
-   
   }
 
   .form {
@@ -206,6 +250,16 @@ nav {
     flex-wrap: wrap;
     width: 30vw;
     background-color: $bg-secondary;
+
+    @include tablet {
+      width: 70vw;
+      margin-top: 35px;
+    }
+
+    @include phone {
+      width: 70vw;
+      margin-top: 35px;
+    }
 
     & select {
       width: 15%;
@@ -227,15 +281,14 @@ nav {
       margin: 15px;
     }
   }
-
 }
 
 footer {
-height: 40px;
-background-color: $bg-primary;
-display: flex;
-justify-content: center;
-align-items: center;
+  height: 40px;
+  background-color: $bg-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   p {
     color: $bg-section;
