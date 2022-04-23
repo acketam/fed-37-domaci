@@ -4,8 +4,210 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="#" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Great+Vibes&family=Lato:wght@300;400&family=Mulish:wght@600&family=Nunito+Sans:wght@300&family=Roboto:wght@300&family=Ubuntu:wght@300&family=Whisper&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <title>HomeExchange</title>
+    <link rel="icon" href="../slike/house.png" />
   </head>
-  <body></body>
+  <body>
+    <!-- HEDADER -->
+    <header>
+      <!-- NAVBAR -->
+      <nav>
+        <li><img src="/slike/location.png" alt="location" />New York</li>
+        <ul>
+          <li><a href="#">Rent</a></li>
+          <li><a href="#">Buy</a></li>
+          <li><a href="#">Sell</a></li>
+          <li><a href="#">Message</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- SECTION ONE -->
+      <div class="imgWraper">
+        <img src="/slike/intro.jpg" alt="city" />
+        <div class="textImage">
+          <h1>Welcome to HomeExchange</h1>
+          <p>Your fastest way to find or sell home online.</p>
+        </div>
+      </div>
+
+      <!-- SECTION TWO -->
+      <div class="btnWraper">
+        <input
+          type="text"
+          value="$1,200-$4000"
+          name="textOne"
+          id="text"
+          readonly
+        />
+        <input
+          type="text"
+          value="$1+Bedroom"
+          name="textTwo"
+          id="text"
+          readonly
+        />
+        <input type="text" value="Garage" name="textThree" id="text" readonly />
+      </div>
+
+      <!-- SECTION THREE -->
+      <div class="offerWraper">
+        <div class="imgContainer">
+          <div class="img">
+            <img src="/slike/1.jpg" alt="meeting room one" />
+            <div class="text">
+              <p>Loft Apartment</p>
+              <p>$3000</p>
+            </div>
+          </div>
+          <div class="img">
+            <img src="/slike/2.jpg" alt="meeting room one" />
+            <div class="text">
+              <p>Lovely House</p>
+              <p>$3500</p>
+            </div>
+          </div>
+          <div class="img">
+            <img src="/slike/3.jpg" alt="reception" />
+            <div class="text">
+              <p>Beachside Condo</p>
+              <p>$2300</p>
+            </div>
+          </div>
+          <div class="img">
+            <img src="/slike/4.jpg" alt="room" />
+            <div class="text">
+              <p>Center town Strudio</p>
+              <p>$2300</p>
+            </div>
+          </div>
+          <div class="img">
+            <img src="/slike/5.jpg" alt="meeting room two" />
+            <div class="text">
+              <p>Artist Studio</p>
+              <p>$3500</p>
+            </div>
+          </div>
+          <div class="img">
+            <img src="/slike/6.jpg" alt="living room" />
+            <div class="text">
+              <p>Downtown Studio</p>
+              <p>$1500</p>
+            </div>
+          </div>
+          <div class="img">
+        </div>
+      </div>
+
+      <!-- SECTION THREE -->
+      <div class="priceWraper">
+        <div class="tableContainer">
+          <h1>pricing</h1>
+          <p>Our services prices in New York</p>
+
+          <!-- table One-->
+          <table border="1">
+            <thead>
+              <tr>
+                <th colspan="2">Price</th>
+              </tr>
+            </thead>
+            <thead>
+              <tr>
+                <th>Rent/Buy</th>
+                <th>Sell</th>
+              </tr>
+            </thead>
+          </table>
+
+          <!-- table two -->
+          <table border="1">
+            <tbody>
+              <tr>
+                <td rowspan="4">Location</td>
+              </tr>
+              <tr>
+                <td>Downtown</td>
+                <td>3$</td>
+                <td>3$</td>
+              </tr>
+              <tr>
+                <td>Center</td>
+                <td>3$</td>
+                <td>3$</td>
+              </tr>
+              <tr>
+                <td>Menhattan</td>
+                <td>3$</td>
+                <td>3$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <div class="contact">
+      <h1>contact us</h1>
+      <div class="contactWraper">
+        <!-- SECTION ONE -->
+        <div class="mapNewYork">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192204.58790508108!2d-74.12020197952369!3d40.714704221424505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0IrRg9GY0L7RgNC6LCDQodGY0LXQtNC40ZrQtdC90LUg0JTRgNC20LDQstC1!5e0!3m2!1ssr!2srs!4v1650706818255!5m2!1ssr!2srs"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- SECTION TWO -->
+        <div class="contactContainer">
+          <form action="#" method="post">
+            <select name="gender" id="gender">
+              <option value="Mrs">Mrs</option>
+              <option value="Mr">Mr</option>
+            </select>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="5"
+              rows="5"
+              placeholder="Your message"
+            ></textarea>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <div>
+            <p>Copyright&copy; 2016 <span>HomeExchange</span></p>
+        </div>
+    </footer>
+  </body>
 </html>
