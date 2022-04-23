@@ -19,7 +19,10 @@
     <header>
       <!-- NAVBAR -->
       <nav>
-        <li><img src="/slike/location.png" alt="location" />New York</li>
+        <li class="dummy">
+          <img src="/slike/location.png" alt="location" />
+          <p>New York</p>
+        </li>
         <ul>
           <li><a href="#">Rent</a></li>
           <li><a href="#">Buy</a></li>
@@ -42,21 +45,29 @@
 
       <!-- SECTION TWO -->
       <div class="btnWraper">
-        <input
-          type="text"
-          value="$1,200-$4000"
-          name="textOne"
-          id="text"
-          readonly
-        />
-        <input
-          type="text"
-          value="$1+Bedroom"
-          name="textTwo"
-          id="text"
-          readonly
-        />
-        <input type="text" value="Garage" name="textThree" id="text" readonly />
+        <div class="inputWrpaper">
+          <input
+            type="text"
+            value="$1,200-$4000"
+            name="textOne"
+            id="text"
+            readonly
+          />
+          <input
+            type="text"
+            value="$1+Bedroom"
+            name="textTwo"
+            id="text"
+            readonly
+          />
+          <input
+            type="text"
+            value="Garage"
+            name="textThree"
+            id="text"
+            readonly
+          />
+        </div>
       </div>
 
       <!-- SECTION THREE -->
@@ -104,49 +115,47 @@
               <p>$1500</p>
             </div>
           </div>
-          <div class="img">
         </div>
       </div>
 
       <!-- SECTION THREE -->
       <div class="priceWraper">
+        <h1>pricing</h1>
+        <p>Our services prices in New York</p>
         <div class="tableContainer">
-          <h1>pricing</h1>
-          <p>Our services prices in New York</p>
-
           <!-- table One-->
-          <table border="1">
+          <table id="first" border="1">
             <thead>
               <tr>
-                <th colspan="2">Price</th>
+                <th id="orangeTitle" colspan="2">Price</th>
               </tr>
             </thead>
             <thead>
               <tr>
-                <th>Rent/Buy</th>
-                <th>Sell</th>
+                <th id="titleTable">Rent/Buy</th>
+                <th id="titleTable">Sell</th>
               </tr>
             </thead>
           </table>
 
           <!-- table two -->
-          <table border="1">
+          <table id="second" border="1">
             <tbody>
               <tr>
-                <td rowspan="4">Location</td>
+                <td id="orangeTitle" rowspan="4">Location</td>
               </tr>
               <tr>
-                <td>Downtown</td>
-                <td>3$</td>
-                <td>3$</td>
-              </tr>
-              <tr>
-                <td>Center</td>
+                <td id="titleTable">Downtown</td>
                 <td>3$</td>
                 <td>3$</td>
               </tr>
               <tr>
-                <td>Menhattan</td>
+                <td id="titleTable">Center</td>
+                <td>3$</td>
+                <td>3$</td>
+              </tr>
+              <tr>
+                <td id="titleTable">Menhattan</td>
                 <td>3$</td>
                 <td>3$</td>
               </tr>
@@ -154,60 +163,62 @@
           </table>
         </div>
       </div>
-    </main>
 
-    <div class="contact">
-      <h1>contact us</h1>
-      <div class="contactWraper">
-        <!-- SECTION ONE -->
-        <div class="mapNewYork">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192204.58790508108!2d-74.12020197952369!3d40.714704221424505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0IrRg9GY0L7RgNC6LCDQodGY0LXQtNC40ZrQtdC90LUg0JTRgNC20LDQstC1!5e0!3m2!1ssr!2srs!4v1650706818255!5m2!1ssr!2srs"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+      <!-- BREAK LINE -->
 
-        <!-- SECTION TWO -->
-        <div class="contactContainer">
-          <form action="#" method="post">
-            <select name="gender" id="gender">
-              <option value="Mrs">Mrs</option>
-              <option value="Mr">Mr</option>
-            </select>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Your name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Your email"
-              required
-            />
-            <textarea
-              name="message"
-              id="message"
-              cols="5"
-              rows="5"
-              placeholder="Your message"
-            ></textarea>
-          </form>
+      <!-- CONTACT SECTION -->
+      <div class="contact">
+        <br />
+        <h1>contact us</h1>
+        <div class="contactWraper">
+          <!-- SECTION ONE -->
+          <div class="mapNewYork">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192204.58790508108!2d-74.12020197952369!3d40.714704221424505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0IrRg9GY0L7RgNC6LCDQodGY0LXQtNC40ZrQtdC90LUg0JTRgNC20LDQstC1!5e0!3m2!1ssr!2srs!4v1650706818255!5m2!1ssr!2srs"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <!-- SECTION TWO -->
+          <div class="contactContainer">
+            <form action="#" method="post">
+              <select name="gender" id="gender">
+                <option value="Mrs">Mrs</option>
+                <option value="Mr">Mr</option>
+              </select>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="message"
+                id="message"
+                cols="5"
+                rows="5"
+                placeholder="Your message"
+              ></textarea>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
     <footer>
-        <div>
-            <p>Copyright&copy; 2016 <span>HomeExchange</span></p>
-        </div>
+      <div>
+        <p>Copyright&copy; 2016 <span>HomeExchange</span></p>
+      </div>
     </footer>
   </body>
 </html>

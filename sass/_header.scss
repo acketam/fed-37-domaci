@@ -1,0 +1,53 @@
+// HEADER
+
+header {
+  nav {
+    text-align: left;
+    list-style-type: none;
+    display: flex;
+
+    li.dummy {
+      background-color: $colorOrange;
+      width: 20rem;
+      font-size: 1.5rem;
+      display: flex;
+
+      img {
+        width: 4rem;
+        margin: auto;
+      }
+
+      p {
+        color: $colorWhite;
+        text-decoration: underline;
+        margin: auto;
+      }
+    }
+  }
+}
+
+header {
+  nav {
+    ul {
+      list-style-type: none;
+      display: flex;
+      background-color: $colorDarkBlue;
+
+      li {
+        width: 5rem;
+        margin: {
+          left: 1rem;
+          top: 1.3rem;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        a {
+          color: $colorWhite;
+        }
+      }
+    }
+  }
+}

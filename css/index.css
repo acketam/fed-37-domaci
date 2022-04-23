@@ -1,3 +1,224 @@
+header nav {
+  text-align: left;
+  list-style-type: none;
+  display: flex;
+}
+header nav li.dummy {
+  background-color: #f75311;
+  width: 20rem;
+  font-size: 1.5rem;
+  display: flex;
+}
+header nav li.dummy img {
+  width: 4rem;
+  margin: auto;
+}
+header nav li.dummy p {
+  color: #ffffff;
+  text-decoration: underline;
+  margin: auto;
+}
 
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  background-color: #374249;
+}
+header nav ul li {
+  width: 5rem;
+  margin-left: 1rem;
+  margin-top: 1.3rem;
+}
+header nav ul li:hover {
+  text-decoration: underline;
+}
+header nav ul li a {
+  color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+main .textImage {
+  text-align: center;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #374249;
+  color: #f3f7f9;
+}
+
+main .btnWraper {
+  height: 5rem;
+}
+main .btnWraper .inputWrpaper {
+  width: 40%;
+  float: right;
+  display: flex;
+}
+main .btnWraper .inputWrpaper input {
+  width: 5rem;
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
+  border: 1px solid #cfd1d3;
+  color: #cfd1d3;
+  border-radius: 2rem;
+  margin-top: 0.7rem;
+}
+main .btnWraper .inputWrpaper input:hover {
+  background-color: #cfd1d3;
+  color: #ffffff;
+}
+
+main .offerWraper {
+  background-color: #f3f7f9;
+}
+main .offerWraper .imgContainer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+main .offerWraper .imgContainer {
+  width: 80%;
+  margin: auto;
+}
+
+.img {
+  float: left;
+  width: 10rem;
+  padding: 1rem;
+  margin-left: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  text-align: left;
+}
+.img img {
+  height: 13rem;
+}
+.img .text {
+  position: absolute;
+  top: 1rem;
+  padding: 1rem;
+  background-color: #f3f7f9;
+  opacity: 0.6;
+  display: none;
+}
+
+.priceWraper {
+  text-align: center;
+}
+.priceWraper h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 2rem;
+  letter-spacing: 1px;
+}
+.priceWraper p {
+  margin-top: 2rem;
+}
+
+.priceWraper .tableContainer {
+  width: 40%;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  font-size: small;
+}
+.priceWraper .tableContainer #second {
+  border-collapse: collapse;
+  border-color: #cfd1d3;
+}
+.priceWraper .tableContainer #second tr td {
+  width: 5rem;
+}
+.priceWraper .tableContainer #first {
+  border-collapse: collapse;
+  border-color: #cfd1d3;
+  width: 50%;
+  margin-top: 2rem;
+  margin-left: 15rem;
+}
+.priceWraper .tableContainer #first tr th {
+  width: 50%;
+  border-bottom: none;
+}
+
+#orangeTitle {
+  background-color: #f75311;
+  color: #cfd1d3;
+}
+
+#titleTable {
+  background-color: #374249;
+  color: #cfd1d3;
+}
+
+main .contact {
+  display: block;
+  background-color: #f3f7f9;
+}
+main .contact h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.contact .contactWraper {
+  display: flex;
+}
+.contact .contactWraper .mapNewYork {
+  text-align: center;
+  width: 70%;
+  margin-top: 4rem;
+}
+.contact .contactWraper .mapNewYork iframe {
+  width: 15rem;
+  height: 15rem;
+}
+.contact .contactWraper .contactContainer form {
+  width: 70%;
+  margin-top: 3.5rem;
+  background-color: #f75311;
+  padding: 1rem;
+  display: inline-block;
+  text-align: center;
+}
+.contact .contactWraper .contactContainer form select {
+  width: 20%;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+.contact .contactWraper .contactContainer form input {
+  width: 70%;
+  height: 1.3rem;
+  color: #cfd1d3;
+  padding-left: 1rem;
+}
+.contact .contactWraper .contactContainer form input#email {
+  width: 94.5%;
+  margin-top: 1rem;
+}
+.contact .contactWraper .contactContainer form textarea {
+  width: 95%;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
 
 /*# sourceMappingURL=index.css.map */
