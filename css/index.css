@@ -36,6 +36,26 @@ header nav ul li a {
   color: #ffffff;
 }
 
+footer {
+  text-align: center;
+}
+footer div {
+  background-color: #374249;
+  font-size: small;
+  height: 2rem;
+  position: relative;
+}
+footer div p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+footer div p span {
+  color: #f75311;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -118,6 +138,10 @@ main .offerWraper .imgContainer {
   display: none;
 }
 
+.img:hover .text {
+  display: block;
+}
+
 .priceWraper {
   text-align: center;
 }
@@ -129,43 +153,56 @@ main .offerWraper .imgContainer {
 }
 .priceWraper p {
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.priceWraper .tableContainer {
-  width: 40%;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 4rem;
-  font-size: small;
+.tableContainer {
+  margin-bottom: 5rem;
 }
-.priceWraper .tableContainer #second {
-  border-collapse: collapse;
-  border-color: #cfd1d3;
-}
-.priceWraper .tableContainer #second tr td {
-  width: 5rem;
-}
-.priceWraper .tableContainer #first {
-  border-collapse: collapse;
-  border-color: #cfd1d3;
+.tableContainer table {
+  margin: auto;
   width: 50%;
-  margin-top: 2rem;
-  margin-left: 15rem;
+  border-collapse: collapse;
 }
-.priceWraper .tableContainer #first tr th {
+.tableContainer table tr {
   width: 50%;
-  border-bottom: none;
 }
-
-#orangeTitle {
+.tableContainer table tr #gone {
+  border: none;
+}
+.tableContainer table tr #orange {
   background-color: #f75311;
   color: #cfd1d3;
 }
-
-#titleTable {
+.tableContainer table tr #darkBlue {
   background-color: #374249;
   color: #cfd1d3;
+}
+.tableContainer table tr td {
+  width: 25%;
+  border: 1px solid black;
+}
+.tableContainer table tr th {
+  width: 25%;
+  border: 1px solid black;
+}
+
+.priceWraper .btnTable {
+  text-align: center;
+  display: none;
+}
+.priceWraper .btnTable input {
+  width: 10rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #cfd1d3;
+  background-color: #ffffff;
+  color: #cfd1d3;
+  border-radius: 5rem;
+}
+.priceWraper .btnTable input:hover {
+  background-color: #cfd1d3;
+  color: #ffffff;
 }
 
 main .contact {
@@ -195,6 +232,7 @@ main .contact h1 {
 .contact .contactWraper .contactContainer form {
   width: 70%;
   margin-top: 3.5rem;
+  margin-bottom: 7rem;
   background-color: #f75311;
   padding: 1rem;
   display: inline-block;
@@ -202,12 +240,12 @@ main .contact h1 {
 }
 .contact .contactWraper .contactContainer form select {
   width: 20%;
-  height: 1.5rem;
+  height: 1.8rem;
   margin-right: 1rem;
 }
 .contact .contactWraper .contactContainer form input {
   width: 70%;
-  height: 1.3rem;
+  height: 1.7rem;
   color: #cfd1d3;
   padding-left: 1rem;
 }
@@ -219,6 +257,177 @@ main .contact h1 {
   width: 95%;
   margin-top: 1rem;
   padding-left: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  header nav {
+    text-align: center;
+    display: block;
+  }
+  header nav li.dummy {
+    text-align: left;
+    background-color: #f75311;
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+  }
+  header nav li.dummy img {
+    width: 4rem;
+    margin: 0;
+  }
+  header nav li.dummy p {
+    color: #ffffff;
+    text-decoration: underline;
+    margin: auto;
+  }
+
+  header nav ul {
+    list-style-type: none;
+    display: block;
+    background-color: #374249;
+  }
+  header nav ul li {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 1rem;
+    display: none;
+  }
+  header nav ul li:hover {
+    text-decoration: underline;
+  }
+  header nav ul li a {
+    color: #ffffff;
+  }
+
+  header nav:hover ul li {
+    display: block;
+  }
+
+  main .imgWraper {
+    background-color: #111111;
+    height: 11rem;
+  }
+  main .imgWraper img {
+    display: none;
+  }
+  main .textImage {
+    opacity: 2;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    background-color: #111111;
+    color: #ffffff;
+  }
+  main .textImage h1 {
+    font-size: 3rem;
+  }
+  main .textImage p {
+    font-size: 1rem;
+  }
+
+  main .btnWraper {
+    height: 3.5rem;
+  }
+  main .btnWraper .inputWrpaper {
+    width: 40%;
+    float: left;
+  }
+  main .btnWraper .inputWrpaper input {
+    width: 6rem;
+    padding: 0.5rem;
+    margin-left: 2rem;
+  }
+
+  main .offerWraper .imgContainer {
+    width: 100%;
+    margin: auto;
+  }
+
+  .img {
+    float: none;
+    width: 80%;
+    padding: 1rem;
+    margin-left: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    text-align: left;
+  }
+  .img img {
+    height: 10rem;
+    object-fit: cover;
+  }
+  .img .text {
+    width: 85%;
+    top: 1rem;
+    padding: 1rem;
+    opacity: 0.7;
+    display: block;
+  }
+
+  .priceWraper {
+    text-align: center;
+  }
+  .priceWraper h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 2rem;
+    letter-spacing: 1px;
+  }
+  .priceWraper p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .tableContainer table {
+    width: 80%;
+    display: none;
+  }
+
+  .priceWraper .btnTable {
+    display: block;
+  }
+
+  .tableContainer:hover table {
+    display: block;
+  }
+  .tableContainer:hover .btnTable {
+    display: none;
+  }
+
+  .contact .contactWraper {
+    display: block;
+  }
+  .contact .contactWraper .mapNewYork {
+    width: 100%;
+  }
+  .contact .contactWraper .mapNewYork iframe {
+    width: 20rem;
+    height: 20rem;
+  }
+  .contact .contactWraper .contactContainer {
+    text-align: center;
+  }
+  .contact .contactWraper .contactContainer form {
+    width: 88%;
+    margin-bottom: 5rem;
+  }
+  .contact .contactWraper .contactContainer form select {
+    width: 100%;
+  }
+  .contact .contactWraper .contactContainer form input {
+    width: 95%;
+    height: 1.7rem;
+  }
+  .contact .contactWraper .contactContainer form input#name {
+    margin-top: 1rem;
+  }
+  .contact .contactWraper .contactContainer form input#email {
+    width: 94.5%;
+    margin-top: 1rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

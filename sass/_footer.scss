@@ -1,0 +1,21 @@
+footer {
+  text-align: center;
+  div {
+    background-color: $colorDarkBlue;
+    font-size: small;
+    height: 2rem;
+    position: relative;
+
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      color: $colorWhite;
+      span {
+        color: $colorOrange;
+      }
+    }
+  }
+}
