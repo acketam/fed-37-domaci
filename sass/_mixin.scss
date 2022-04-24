@@ -8,6 +8,99 @@
 //MEDIUM
 @mixin medium {
   @media screen and (max-width: 769px) {
+    // HEADER
+
+    header {
+      nav {
+        li.dummy {
+          background-color: $colorOrange;
+          width: 15rem;
+          font-size: 1rem;
+
+          img {
+            width: 3rem;
+          }
+        }
+      }
+    }
+
+    header {
+      nav {
+        ul {
+          li {
+            width: 4rem;
+            margin: {
+              top: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    // MAIN SECTION ONE
+    main {
+      .textImage {
+        width: 50%;
+        top: 40%;
+      }
+    }
+
+    // SECTION TWO
+    main {
+      .btnWraper {
+        .inputWrpaper {
+          width: 60%;
+        }
+      }
+    }
+
+    //SECTION THREE
+
+    .img {
+      width: 17rem;
+      padding: 0.1rem;
+
+      img {
+        height: 19rem;
+      }
+      .text {
+        top: 0;
+        padding: 2rem;
+      }
+    }
+
+    // SECTION FOUR
+
+    .tableContainer {
+      margin: {
+        bottom: 5rem;
+      }
+
+      table {
+        width: 70%;
+      }
+    }
+
+    // SECTION FIVE
+
+    .contact {
+      .contactWraper {
+        display: block;
+        .mapNewYork {
+          text-align: center;
+          width: 100%;
+          margin-top: 4rem;
+          iframe {
+            width: 18rem;
+            height: 18rem;
+          }
+        }
+
+        .contactContainer {
+          text-align: center;
+        }
+      }
+    }
   }
 }
 
@@ -124,7 +217,7 @@
       }
     }
 
-    // SECTIOON FOUR
+    // SECTIOON THREE
 
     main {
       .offerWraper {
@@ -159,7 +252,7 @@
       }
     }
 
-    // SECTION FIVE
+    // SECTION FOUR
     .priceWraper {
       text-align: center;
       h1 {
@@ -199,7 +292,7 @@
       }
     }
 
-    // SECTION SIX
+    // SECTION FIVE
 
     .contact {
       .contactWraper {

@@ -259,6 +259,65 @@ main .contact h1 {
   padding-left: 1rem;
 }
 
+@media screen and (max-width: 769px) {
+  header nav li.dummy {
+    background-color: #f75311;
+    width: 15rem;
+    font-size: 1rem;
+  }
+  header nav li.dummy img {
+    width: 3rem;
+  }
+
+  header nav ul li {
+    width: 4rem;
+    margin-top: 1rem;
+  }
+
+  main .textImage {
+    width: 50%;
+    top: 40%;
+  }
+
+  main .btnWraper .inputWrpaper {
+    width: 60%;
+  }
+
+  .img {
+    width: 17rem;
+    padding: 0.1rem;
+  }
+  .img img {
+    height: 19rem;
+  }
+  .img .text {
+    top: 0;
+    padding: 2rem;
+  }
+
+  .tableContainer {
+    margin-bottom: 5rem;
+  }
+  .tableContainer table {
+    width: 70%;
+  }
+
+  .contact .contactWraper {
+    display: block;
+  }
+  .contact .contactWraper .mapNewYork {
+    text-align: center;
+    width: 100%;
+    margin-top: 4rem;
+  }
+  .contact .contactWraper .mapNewYork iframe {
+    width: 18rem;
+    height: 18rem;
+  }
+  .contact .contactWraper .contactContainer {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 480px) {
   header nav {
     text-align: center;
