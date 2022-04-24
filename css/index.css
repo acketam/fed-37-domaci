@@ -72,7 +72,7 @@ main .textImage {
   letter-spacing: 1px;
   opacity: 0.6;
   position: absolute;
-  top: 65%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #374249;
@@ -259,7 +259,34 @@ main .contact h1 {
   padding-left: 1rem;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  main .textImage {
+    top: 50%;
+  }
+
+  main .btnWraper {
+    height: 5rem;
+  }
+  main .btnWraper .inputWrpaper {
+    width: 60%;
+  }
+
+  main .offerWraper .imgContainer {
+    width: 90%;
+  }
+
+  .tableContainer {
+    margin-bottom: 5rem;
+  }
+  .tableContainer table {
+    width: 80%;
+  }
+
+  .contact .contactWraper .contactContainer form select {
+    width: 15%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
   header nav li.dummy {
     background-color: #f75311;
     width: 15rem;
@@ -276,15 +303,15 @@ main .contact h1 {
 
   main .textImage {
     width: 50%;
-    top: 40%;
+    top: 30%;
   }
 
   main .btnWraper .inputWrpaper {
-    width: 60%;
+    width: 100%;
   }
 
   .img {
-    width: 17rem;
+    width: 40%;
     padding: 0.1rem;
   }
   .img img {
@@ -318,7 +345,7 @@ main .contact h1 {
     text-align: center;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   header nav {
     text-align: center;
     display: block;
@@ -327,11 +354,11 @@ main .contact h1 {
     text-align: left;
     background-color: #f75311;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: flex;
   }
   header nav li.dummy img {
-    width: 4rem;
+    width: 3rem;
     margin: 0;
   }
   header nav li.dummy p {
@@ -346,7 +373,7 @@ main .contact h1 {
     background-color: #374249;
   }
   header nav ul li {
-    width: 100%;
+    width: 90%;
     margin-left: 0;
     margin-top: 0;
     padding: 1rem;
@@ -378,25 +405,27 @@ main .contact h1 {
     transform: translate(0%, 0%);
     background-color: #111111;
     color: #ffffff;
+    width: 100%;
   }
   main .textImage h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   main .textImage p {
     font-size: 1rem;
   }
 
   main .btnWraper {
-    height: 3.5rem;
+    height: 3rem;
   }
   main .btnWraper .inputWrpaper {
-    width: 40%;
+    width: 30%;
     float: left;
   }
   main .btnWraper .inputWrpaper input {
-    width: 6rem;
+    width: 3.5rem;
     padding: 0.5rem;
-    margin-left: 2rem;
+    margin-left: 30%;
+    font-size: 8px;
   }
 
   main .offerWraper .imgContainer {
@@ -463,8 +492,8 @@ main .contact h1 {
     width: 100%;
   }
   .contact .contactWraper .mapNewYork iframe {
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
   }
   .contact .contactWraper .contactContainer {
     text-align: center;

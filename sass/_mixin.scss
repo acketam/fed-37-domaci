@@ -1,13 +1,63 @@
 // LARGE
-
 @mixin large {
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+    // SECTION ONE
+    main {
+      .textImage {
+        top: 50%;
+      }
+    }
+
+    // SECTION TWO
+    main {
+      .btnWraper {
+        height: 5rem;
+        .inputWrpaper {
+          width: 60%;
+        }
+      }
+    }
+
+    // SECTION THREE
+
+    main {
+      .offerWraper {
+        .imgContainer {
+          width: 90%;
+        }
+      }
+    }
+
+    // SECTION FOUR
+
+    .tableContainer {
+      margin: {
+        bottom: 5rem;
+      }
+      table {
+        width: 80%;
+      }
+    }
+
+    // SECTION FIVE
+
+    .contact {
+      .contactWraper {
+        .contactContainer {
+          form {
+            select {
+              width: 15%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 //MEDIUM
 @mixin medium {
-  @media screen and (max-width: 769px) {
+  @media screen and (min-width: 481px) and (max-width: 768px) {
     // HEADER
 
     header {
@@ -41,7 +91,7 @@
     main {
       .textImage {
         width: 50%;
-        top: 40%;
+        top: 30%;
       }
     }
 
@@ -49,7 +99,7 @@
     main {
       .btnWraper {
         .inputWrpaper {
-          width: 60%;
+          width: 100%;
         }
       }
     }
@@ -57,7 +107,7 @@
     //SECTION THREE
 
     .img {
-      width: 17rem;
+      width: 40%;
       padding: 0.1rem;
 
       img {
@@ -106,7 +156,7 @@
 
 //SMALL
 @mixin small {
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     // HEADER
     header {
       nav {
@@ -117,11 +167,11 @@
           text-align: left;
           background-color: $colorOrange;
           width: 100%;
-          font-size: 1.5rem;
+          font-size: 1rem;
           display: flex;
 
           img {
-            width: 4rem;
+            width: 3rem;
             margin: 0;
           }
 
@@ -142,7 +192,7 @@
           background-color: $colorDarkBlue;
 
           li {
-            width: 100%;
+            width: 90%;
             margin: {
               left: 0;
               top: 0;
@@ -192,8 +242,9 @@
         transform: translate(0%, 0%);
         background-color: $colorBlack;
         color: $colorWhite;
+        width: 100%;
         h1 {
-          font-size: 3rem;
+          font-size: 2rem;
         }
         p {
           font-size: 1rem;
@@ -204,14 +255,15 @@
     // SECTION TWO
     main {
       .btnWraper {
-        height: 3.5rem;
+        height: 3rem;
         .inputWrpaper {
-          width: 40%;
+          width: 30%;
           float: left;
           input {
-            width: 6rem;
+            width: 3.5rem;
             padding: 0.5rem;
-            margin-left: 2rem;
+            margin-left: 30%;
+            font-size: 8px;
           }
         }
       }
@@ -300,8 +352,8 @@
         .mapNewYork {
           width: 100%;
           iframe {
-            width: 20rem;
-            height: 20rem;
+            width: 18rem;
+            height: 18rem;
           }
         }
 
