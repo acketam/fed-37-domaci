@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,104 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Domaci FED-37</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="logo-box">
+            <img src="slike/location.png" alt="logo">
+            <a href="#">New York</a>
+        </div>
+        <nav>
+            <li><a href="#">Rent</a></li>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Sell</a></li>
+            <li><a href="#">Messages</a></li>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="title-box">
+            <h1>Welcome to HomeExchange</h1>
+            <p>Your fastest way to find or sell home online</p>
+        </div>
+    </section>
+    <section class="main">
+        <div class="filter-box">
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+        <div class="gallery-section">
+            <div class="photo-box">
+                <img src="slike/1.jpg" alt="slika-1">
+            </div>
+            <div class="photo-box">
+                <img src="slike/1.jpg" alt="slika-1">
+            </div>
+            <div class="photo-box">
+                <img src="slike/1.jpg" alt="slika-1">
+            </div>
+            <div class="photo-box">
+                <img src="slike/1.jpg" alt="slika-1">
+            </div>
+            <div class="photo-box">
+                <img src="slike/1.jpg" alt="slika-1">
+            </div>
+            <div class="photo-box">
+                <img src="slike/1.jpg" alt="slika-1">
+            </div>
+        </div>
+    </section>
+    <section class="pricing">
+        <h1>Pricing</h1>
+        <p>Our services prices in New York</p>
+        <table>
+            <tr>
+                <th class="empty-box" colspan="2"></th>
+                <th class="orange-box" colspan="2">Price</th>
+            </tr>
+            <tr>
+                <th class="empty-box" colspan="2"></th>
+                <th class="gray-box">Rent/Buy</th>
+                <th class="gray-box">Sell</th>
+            </tr>
+            <tr>
+                <td class="orange-box" rowspan="3">Location</td>
+                <td class="gray-box">Downtown</td>
+                <td>3$</td>
+                <td>3$</td>
+            </tr>
+            <tr>
+                <td class="gray-box">Center</td>
+                <td>3$</td>
+                <td>3$</td>
+            </tr>
+            <tr>
+                <td class="gray-box">Center</td>
+                <td>3$</td>
+                <td>3$</td>
+            </tr>
+        </table>
+    </section>
+    <section class="contact-us">
+        <h1>Contact us</h1>
+        <div class="map-form-box">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1CzO3A1Dgwse-TMDfVS0NFzhDhh0&ehbc=2E312F" width="300" height="300"></iframe>
+            <form action="post">
+                <div class="row">
+                    <select name="abbreviation" id="abbreviation">
+                        <option value="Mrs">Mrs</option>
+                        <option value="Mrs">Mrs</option>
+                    </select>
+                    <input type="text" name="name" id="name" placeholder="Your name">
+                </div>
+                <input type="email" name="email" id="email" placeholder="Your email">
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Your message"></textarea>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2016 <span>HomeExchange</span> </p>
+    </footer>
 </body>
+
 </html>
