@@ -9,12 +9,11 @@
 }
 
 body header {
-  background-color: gray;
+  background-color: #374249;
   display: flex;
-  height: 60px;
 }
 body header .logo-box {
-  background-color: orange;
+  background-color: #f75311;
   display: flex;
   flex: 1;
   align-items: center;
@@ -49,8 +48,8 @@ body header nav ul li a {
   font-weight: bold;
 }
 body .hero {
-  height: calc(100vh - 60px);
   text-align: center;
+  height: calc(100vh - 60px);
   display: flex;
   align-items: center;
   padding-top: 10%;
@@ -60,9 +59,9 @@ body .hero {
   background-size: cover;
 }
 body .hero .title-box {
-  background-color: rgba(128, 128, 128, 0.7);
-  max-width: 1600px;
-  width: 80%;
+  background-color: rgba(55, 66, 73, 0.7);
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 body .hero .title-box h1 {
@@ -77,34 +76,35 @@ body .main .filter-box {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  max-width: 1600px;
-  width: 80%;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 body .main .filter-box button {
   background-color: white;
-  border: 1px solid rgba(128, 128, 128, 0.5);
+  border: 1px solid rgba(55, 66, 73, 0.5);
   color: gray;
   margin-left: 2rem;
   padding: 0.875rem 1.5rem;
   border-radius: 25px;
 }
 body .gallery-section-container {
-  background-color: lightblue;
+  background-color: #f3f7f9;
 }
 body .gallery-section-container .gallery-section {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding: 100px 0;
+  padding: 80px 0;
   gap: 60px;
-  max-width: 1600px;
-  width: 80%;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 body .gallery-section-container .gallery-section .photo-box {
-  width: 300px;
-  height: 400px;
+  max-width: 250px;
+  width: 100%;
+  min-height: 350px;
   background-size: cover;
 }
 body .pricing {
@@ -112,8 +112,8 @@ body .pricing {
   padding: 100px 0;
 }
 body .pricing .pricing-container {
-  max-width: 1600px;
-  width: 80%;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -128,9 +128,10 @@ body .pricing .pricing-container p {
 }
 body .pricing .pricing-container table {
   border-collapse: collapse;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   border: none;
-  border-color: rgba(128, 128, 128, 0.7);
+  border-color: rgba(55, 66, 73, 0.7);
   color: white;
 }
 body .pricing .pricing-container table tr th,
@@ -141,28 +142,29 @@ body .pricing .pricing-container table .empty-box {
   border: none;
 }
 body .pricing .pricing-container table .gray-box {
-  background-color: gray;
+  background-color: #374249;
 }
 body .pricing .pricing-container table .orange-box {
-  background-color: orange;
+  background-color: #f75311;
 }
 body .pricing .pricing-container table .text-colored {
-  color: gray;
+  color: #374249;
 }
 body .contact-us {
-  background-color: lightblue;
+  background-color: #f3f7f9;
 }
 body .contact-us .contact-us-container {
   padding: 100px 0;
-  max-width: 1600px;
-  width: 80%;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 body .contact-us .contact-us-container h2 {
+  text-align: center;
   margin-bottom: 80px;
 }
 body .contact-us .contact-us-container .map-form-box {
@@ -170,12 +172,12 @@ body .contact-us .contact-us-container .map-form-box {
   display: flex;
 }
 body .contact-us .contact-us-container .map-form-box iframe {
-  flex: 1;
+  max-width: 300px;
+  width: 100%;
 }
 body .contact-us .contact-us-container .map-form-box form {
-  background-color: orange;
-  flex: 2;
-  min-width: 600px;
+  background-color: #f75311;
+  width: 100%;
   height: 100%;
   padding: 30px;
 }
@@ -203,7 +205,7 @@ body .contact-us .contact-us-container .map-form-box form textarea {
   width: 100%;
 }
 body footer {
-  background-color: gray;
+  background-color: #374249;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,7 +214,98 @@ body footer {
   height: 60px;
 }
 body footer span {
-  color: orange;
+  color: #f75311;
+}
+
+/* Mixins */
+@media screen and (max-width: 767px) {
+  body header .logo-box {
+    justify-content: center;
+  }
+  body .gallery-section-container .gallery-section {
+    gap: 20px;
+    justify-content: space-between;
+  }
+  body .gallery-section-container .gallery-section .photo-box {
+    max-width: 250px;
+    width: 50%;
+    max-height: 350px;
+  }
+  body .contact-us .contact-us-container .map-form-box {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .contact-us .contact-us-container .map-form-box iframe {
+    min-height: 250px;
+    max-width: 400px;
+    width: 100%;
+  }
+  body .contact-us .contact-us-container .map-form-box form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  body header {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+  }
+  body header .logo-box {
+    justify-content: flex-start;
+    padding-left: 10%;
+  }
+  body header nav ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #374249;
+  }
+  body header nav ul li {
+    margin: 0;
+  }
+  body .hero {
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 10%;
+    background: black;
+  }
+  body .hero .title-box {
+    background-color: black;
+    width: 100%;
+  }
+  body .pricing .pricing-container {
+    padding: 20px;
+  }
+  body .gallery-section-container .gallery-section {
+    justify-content: center;
+    padding: 20px;
+  }
+  body .gallery-section-container .gallery-section .photo-box {
+    min-height: 200px;
+    max-width: 100%;
+    width: 100%;
+  }
+  body .gallery-section-container .gallery-section .photo-box:hover .mobile-only {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 40%;
+    display: block;
+  }
+  body .main .filter-box {
+    padding: 1rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+  body .main .filter-box button {
+    margin: 0;
+    padding: 0.5rem 1rem;
+  }
+  body .contact-us .contact-us-container {
+    padding: 20px;
+  }
+  body .contact-us .contact-us-container .map-form-box form .row {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
