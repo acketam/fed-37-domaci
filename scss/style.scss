@@ -22,11 +22,9 @@ nav{
 
         
             a{
-            text-decoration: none;
-            color: $Boja-slova;
+            @include linkovi;
             width: 100px;
-            display: inline-block;
-            padding: 10px 15px;
+            
 
             &:hover{
                 background-color: $hover-pozadina;
@@ -70,5 +68,78 @@ nav{
             font-size: 48px;
         }
         
+    }
+}
+
+.izmedju {
+
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    width: 80%;
+    margin:  auto;
+
+    a {
+        @include linkovi;
+        border: 1px solid $Boja-slova;
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+
+    }
+}
+.centralni{
+    background: $pozadina-sekcije;
+
+    .slike{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 0;
+        
+
+        img{
+            width: 250px;
+            height: 350px;
+            margin: 15px;
+        }
+    }
+}
+
+.tabela{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    margin: auto;
+    padding: 30px;
+    
+    h2, p{
+        padding: 30px 0;
+        
+    }
+}
+
+table{
+
+    width: 50%;
+    th, td{
+        border: 1px solid black;
+        
+
+    }
+
+    .nista{
+        border: none;
+    }
+    .nar{
+        background: $narandzasta;
+        color: #fff;
+    }
+    .tamna{
+        background: $Naslovi;
+        color: #fff;
     }
 }

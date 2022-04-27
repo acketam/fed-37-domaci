@@ -27,9 +27,9 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #797979;
-  width: 100px;
   display: inline-block;
   padding: 10px 15px;
+  width: 100px;
 }
 nav ul li a:hover {
   background-color: #cfd1d3;
@@ -63,6 +63,71 @@ nav ul .ny img {
 }
 .showcase .sadrzaj h1 {
   font-size: 48px;
+}
+
+.izmedju {
+  display: flex;
+  justify-content: flex-end;
+  height: 80px;
+  width: 80%;
+  margin: auto;
+}
+.izmedju a {
+  text-decoration: none;
+  color: #797979;
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid #797979;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.centralni {
+  background: #f3f7f9;
+}
+.centralni .slike {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+.centralni .slike img {
+  width: 250px;
+  height: 350px;
+  margin: 15px;
+}
+
+.tabela {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 30px;
+}
+.tabela h2, .tabela p {
+  padding: 30px 0;
+}
+
+table {
+  width: 50%;
+}
+table th, table td {
+  border: 1px solid black;
+}
+table .nista {
+  border: none;
+}
+table .nar {
+  background: #f75311;
+  color: #fff;
+}
+table .tamna {
+  background: #374249;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
