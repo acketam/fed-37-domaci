@@ -1,0 +1,92 @@
+@media screen and (max-width: 1100px) {
+  .contact .col {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header .logo {
+    width: 100%;
+  }
+  header .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .nav ul li {
+    padding: 1rem;
+  }
+
+  .hero {
+    height: 60rem;
+    background-color: #000;
+    background-image: none;
+  }
+  .hero h1 {
+    font-size: 3.6rem;
+  }
+
+  .filter .option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rooms {
+    padding: 0 5rem;
+  }
+  .rooms .col {
+    width: 100%;
+  }
+  .rooms .col img {
+    width: 100%;
+  }
+  .rooms .col .overlay {
+    opacity: 0.7;
+  }
+  .rooms .col .text {
+    color: #000;
+  }
+
+  table {
+    display: none;
+  }
+
+  .btn_table {
+    display: block;
+    color: #797979;
+    border: 1px solid #797979;
+    border-radius: 5rem;
+    padding: 1.5rem;
+  }
+
+  .contact {
+    margin: 0 2rem;
+  }
+
+  .formInput {
+    padding: 1rem;
+  }
+
+  .formInput[type=text] {
+    width: 95%;
+  }
+
+  #ms {
+    width: 95%;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

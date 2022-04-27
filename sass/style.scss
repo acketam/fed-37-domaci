@@ -1,0 +1,334 @@
+@import "vars";
+@import "mixins";
+
+/* GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $fontFamily;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER STYLE */
+
+header {
+  display: flex;
+  height: 8rem;
+
+  /* LOGO */
+  .logo {
+    background-color: $orangeColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6rem;
+    padding: 0.5rem;
+    width: 20%;
+
+    span {
+      color: $whiteColor;
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* NAV */
+  .nav {
+    background-color: $headerFooterColor;
+    width: 80%;
+    display: flex;
+
+    ul {
+      display: flex;
+      align-items: center;
+    }
+
+    li {
+      list-style-type: none;
+      color: $fontColor;
+      font-size: 2.6rem;
+      padding-left: 1rem;
+      margin-left: 2rem;
+
+      a {
+        color: $whiteColor;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* HERO STYLE */
+
+.hero {
+  height: 60rem;
+  background-image: url(../slike/intro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .headline {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* HEADLINE */
+  h1 {
+    color: $whiteColor;
+    font-size: 4.8rem;
+  }
+
+  p {
+    color: $whiteColor;
+    font-size: 1.8rem;
+  }
+}
+
+/* FILTERS */
+
+.filter {
+  @include whiteSpace;
+
+  /* OPTIONS */
+  .option {
+    height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .link {
+    padding-left: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1.8rem;
+    font-size: 1.8rem;
+    border: 1px solid $fontColor;
+    border-radius: 2rem;
+    color: $fontColor;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+/* ROOMS */
+
+.rooms {
+  background-color: $colorHover;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+  // align-items: center;
+  padding: 0 15rem;
+  @include paddingTopBotttom;
+
+  /* rooms */
+
+  .col {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    margin: 0.5rem;
+    // padding: 5px;
+
+    img {
+      height: 400px;
+      width: 300px;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    background-color: $colorHover;
+    opacity: 0;
+  }
+
+  .text {
+    color: $whiteColor;
+    text-align: center;
+
+    h1 {
+      font-size: 2.6rem;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.col:hover .overlay {
+  opacity: 0.7;
+}
+
+/* PRICING */
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @include whiteSpace;
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+}
+
+/* TABLE */
+
+table {
+  width: 80%;
+  margin: 0 auto;
+
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.orangeColor {
+  background-color: $orangeColor;
+  color: $whiteColor;
+}
+
+.grayColor {
+  background-color: $headerFooterColor;
+  color: $whiteColor;
+}
+
+td.noBorder {
+  border: 0px;
+  border-style: hidden;
+}
+
+/* TABLE CSS - TESSSTTTT */
+
+table,
+td,
+th {
+  border: 1px solid #595959;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 3px;
+  width: 30px;
+  height: 25px;
+}
+th {
+  background: #f0e6cc;
+}
+
+.btn_table {
+  font-size: 1.8rem;
+  text-align: center;
+  display: inline-block;
+  // margin: 0 auto;
+  margin: 2rem 0;
+  display: none;
+}
+
+/* FOOTER */
+
+.contact {
+  background-color: $grayColorHover;
+  padding: 5rem 0;
+  text-align: center;
+
+  h1 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+  }
+
+  .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* map */
+  .map {
+    padding: 4rem;
+  }
+
+  /* contact */
+
+  .form {
+    background-color: $orangeColor;
+    padding: 5rem;
+  }
+}
+
+.formInput {
+  color: $fontColor;
+  border: 0;
+  margin: 0.5rem;
+  padding: 0.2rem;
+}
+
+.select {
+  width: 20%;
+}
+
+.formInput[type="text"] {
+  width: 85%;
+}
+
+.formInput[type="email"] {
+  width: 95%;
+}
+
+textarea.formInput {
+  width: 95%;
+  height: 15rem;
+  font-family: $fontFamily;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: $headerFooterColor;
+  color: $whiteColor;
+  text-align: center;
+  @include paddingTopBotttom;
+  font-size: 1.8rem;
+
+  span {
+    color: $orangeColor;
+  }
+}

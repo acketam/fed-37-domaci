@@ -1,0 +1,15 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin whiteSpace {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+@mixin paddingTopBotttom {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}

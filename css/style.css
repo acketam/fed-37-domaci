@@ -1,0 +1,296 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER STYLE */
+header {
+  display: flex;
+  height: 8rem;
+  /* LOGO */
+  /* NAV */
+}
+header .logo {
+  background-color: #f75311;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.6rem;
+  padding: 0.5rem;
+  width: 20%;
+}
+header .logo span {
+  color: #fff;
+  text-decoration: underline;
+}
+header img {
+  height: 40px;
+  width: 40px;
+}
+header .nav {
+  background-color: #374249;
+  width: 80%;
+  display: flex;
+}
+header .nav ul {
+  display: flex;
+  align-items: center;
+}
+header .nav li {
+  list-style-type: none;
+  color: #797979;
+  font-size: 2.6rem;
+  padding-left: 1rem;
+  margin-left: 2rem;
+}
+header .nav li a {
+  color: #fff;
+}
+header .nav li a:hover {
+  text-decoration: underline;
+}
+
+/* HERO STYLE */
+.hero {
+  height: 60rem;
+  background-image: url(../slike/intro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* HEADLINE */
+}
+.hero .headline {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  color: #fff;
+  font-size: 4.8rem;
+}
+.hero p {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+/* FILTERS */
+.filter {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  /* OPTIONS */
+}
+.filter .option {
+  height: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.filter .link {
+  padding-left: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 1.8rem;
+  font-size: 1.8rem;
+  border: 1px solid #797979;
+  border-radius: 2rem;
+  color: #797979;
+}
+.filter a:hover {
+  text-decoration: underline;
+}
+
+/* ROOMS */
+.rooms {
+  background-color: #cfd1d3;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  /* rooms */
+}
+.rooms .col {
+  position: relative;
+  height: 400px;
+  width: 300px;
+  margin: 0.5rem;
+}
+.rooms .col img {
+  height: 400px;
+  width: 300px;
+}
+.rooms .overlay {
+  position: absolute;
+  top: 0;
+  height: 50%;
+  width: 100%;
+  background-color: #cfd1d3;
+  opacity: 0;
+}
+.rooms .text {
+  color: #fff;
+  text-align: center;
+}
+.rooms .text h1 {
+  font-size: 2.6rem;
+}
+.rooms .text h3 {
+  font-size: 1.6rem;
+}
+
+.col:hover .overlay {
+  opacity: 0.7;
+}
+
+/* PRICING */
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.pricing h1 {
+  font-size: 2.6rem;
+}
+.pricing p {
+  font-size: 1.8rem;
+}
+
+/* TABLE */
+table {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.orangeColor {
+  background-color: #f75311;
+  color: #fff;
+}
+
+.grayColor {
+  background-color: #374249;
+  color: #fff;
+}
+
+td.noBorder {
+  border: 0px;
+  border-style: hidden;
+}
+
+/* TABLE CSS - TESSSTTTT */
+table,
+td,
+th {
+  border: 1px solid #595959;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 3px;
+  width: 30px;
+  height: 25px;
+}
+
+th {
+  background: #f0e6cc;
+}
+
+.btn_table {
+  font-size: 1.8rem;
+  text-align: center;
+  display: inline-block;
+  margin: 2rem 0;
+  display: none;
+}
+
+/* FOOTER */
+.contact {
+  background-color: #f3f7f9;
+  padding: 5rem 0;
+  text-align: center;
+  /* map */
+  /* contact */
+}
+.contact h1 {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
+.contact .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .map {
+  padding: 4rem;
+}
+.contact .form {
+  background-color: #f75311;
+  padding: 5rem;
+}
+
+.formInput {
+  color: #797979;
+  border: 0;
+  margin: 0.5rem;
+  padding: 0.2rem;
+}
+
+.select {
+  width: 20%;
+}
+
+.formInput[type=text] {
+  width: 85%;
+}
+
+.formInput[type=email] {
+  width: 95%;
+}
+
+textarea.formInput {
+  width: 95%;
+  height: 15rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* FOOTER */
+footer {
+  background-color: #374249;
+  color: #fff;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  font-size: 1.8rem;
+}
+footer span {
+  color: #f75311;
+}
+
+/*# sourceMappingURL=style.css.map */
