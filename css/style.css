@@ -8,4 +8,61 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+nav {
+  background: #374249;
+  height: 70px;
+  display: flex;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #797979;
+  width: 100px;
+  display: inline-block;
+  padding: 10px 15px;
+}
+nav ul li a:hover {
+  background-color: #cfd1d3;
+  text-decoration: underline;
+}
+nav ul .ny {
+  background-color: #f75311;
+  width: 200px;
+  display: flex;
+}
+nav ul .ny img {
+  width: 20%;
+  height: 50%;
+}
+
+.showcase {
+  background: url("../slike/intro.jpg") no-repeat center center/cover;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.showcase .sadrzaj {
+  background: rgba(55, 66, 73, 0.5);
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.showcase .sadrzaj h1 {
+  font-size: 48px;
+}
+
 /*# sourceMappingURL=style.css.map */
